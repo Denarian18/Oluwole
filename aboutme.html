@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="aboutme.css">
+    <title>ABOUT ME</title>
+</head>
+<body>
+
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">&#9776;</label>
+        
+        <label class="logo">DenarianXVI<sup style="font-size:small;">3</sup></label>
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+             <li><a class="active" href="aboutme.html">About</a></li>
+              <li><a  href="services.html">Services</a></li>
+               <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="container">
+
+        
+        <div class="navigation"> 
+            <div class="subnav">
+                <h4>NAME: Adekunbi Wole</h4>
+                <p>Customer Relations & Web Developer</p>
+            </div>
+        </div>
+        <div class="content">
+            <h1 style="font-size: 50px; padding: 20px; color: peru;">ABOUT ME</h1>
+            <div id="line"></div>
+            <P style="padding-top: 20px;">Hi ! <br>
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    I'm Oluwole Emmanuel Adekunbi, a young developer in my mid twenties, i'm the first of a three children in a family of five beautiful people, i have my roots in Abokuta area of Ogun, Nigeria, but i was born and bred in Lagos, Nigeria. i completed my elementary/Basic eduction at Elshaddai schools in (2008) and was immediately accepted into her secondary school where i completed junior secondary, before transfering to Bosworth college int'l, to complete the my higher secondary school education. This i did in june (2014) and was Granted admission into The Bells University of technology, for the commencement of my first degree programme in computer Engineering, but i came unstuck in my 3rd year when i had to step down due to financial constraints. While im hoping to one day complete my programme, i've tried to make the most of what i've got and clinged to life as hard as i can. I've worked several jobs over the years, including; data entry officer, production officer, cashier, factory utility/auxiliary staff, mathematics teacher, private home tutor/coach etc. as well as a few training programmes which include Customer service, catering, web development, etc. <br>
+                <br>
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     I've always had a limited amount of time in each Job role in the past, as im am always looking for ways to return to school, but i've been able to gather experience working independently and as a team member, both on-site and in a remote workspace, as well as a strong experience in leadership roles, which has afforded me experience and insights in the dynamics of team cohesion. i also have a keen sense of responsibility, coupled with resilience which blosters my problem solving skills. i'm very optimistic, positive, innovative, emphatic and passionate about my work, my personality lets itself to giving my all to what i do as i hate to be caught lacking in any department. i have a keen sense of gratitude and courtesy which blosters my relationship with others.
+
+            
+            <h2 style="font-size: 40px; padding-top:10px; padding-bottom:5px; text-decoration: underline; color: peru;">Achievements</h2>
+            
+                
+                
+            Appointed Head Prefect Elementary/Primary school 2007  &#9733;<br>
+            Overall Best graduating ICT pupil class 0f 2008 &#129351;<br>
+            1st Place 200M Boys Sprint 2011 &#129351;<br>
+            Appointed acting High School Head Prefect 2013 &#9733;<br>
+            Appointed Head Sanitation Prefect 2013-2014 &#9733;<br>
+            Runner Up Inter-house football leauge 2014 &#129352;<br>
+            Overall Best graduating ICT student class of 2014 &#129351;<br>
+            Appointed Youth Movement Leader CGDM 2018 &#9733;<br>
+               
+            </P>
+        </div>
+    </div>
+    <div id="container1">
+        
+        <h1>MY SKILLS</h1>
+        
+        <div id="line" style="margin-left: 20%; margin-right: 40%; margin-top:0; margin-bottom:20px;"></div>
+            <div id="subcontainer">
+                    <div class="skill0ms"><p>89%</p></div>
+                    <div class="skill0html"><p>75%</p></div>
+                    <div class="skill0css"><p>70%</p></div>
+                    <div class="skill0cs"><p>85%</p></div>
+                    <div class="skill MS"><p>Microsoft</p></div>
+                    <div class="skill Html5"><p>HTML&CSS</p></div>
+                    <div class="skill CSS3"><p>JAVASCRIPT</p></div>
+                    <div class="skill cs"><p>Graphics Design</p></div>
+                    
+            </div>
+
+    </div>
+
+
+
+
+
+
+
+
+       <!--this below  div is the containeer for everything -->
+    <div id="carousel-container">
+
+        <div class="navigation-buttons">
+            <div class="previous nav-btn"><</div>
+            <div class="next nav-btn">></div>
+        </div>
+
+        <div class="slider-carousel">
+
+            <div class="images main">
+                <img src="dami.png" alt="flash">
+                <div class="image-text">Ale Damilola</div>
+            </div>
+            <div class="images">
+                <img src="dorian.png" alt="Spiderman">
+                <div class="image-text">Festus Dorian</div>
+            </div>
+            <div class="images">
+                <img src="more.png" alt="Moonkinght">
+                <div class="image-text">Morenike</div>
+            </div>
+
+        
+    </div>
+
+
+
+    <div id="location">
+        <h1>looking to find me?</h1>
+        <img src="Screenshot_20231013_015111.jpg" alt="">
+    </div>
+
+
+    <script>
+
+        const previous = document.querySelector('.previous');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.slider-carousel').children;
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+
+            //Event listeners to Previous and next Buttons
+        previous .addEventListener('click',() => {
+            previousImage()
+        })
+        next.addEventListener('click',() => {
+            nextImage();
+        })
+
+
+            // delay
+        setInterval(()=>{
+            nextImage();
+        },5000);
+
+
+
+            // Fumction to next Image
+        function nextImage(){
+
+            images[currentIndex].classList.remove('main');
+            if(currentIndex == totalImages-1){
+                currentIndex = 0;
+            }
+            else{
+                 currentIndex++;
+            }
+            images[currentIndex].classList.add('main');
+        }
+        
+            // function to Previous Image
+        function previousImage(){
+            images[currentIndex].classList.remove('main');
+            if(currentIndex == 0) {
+                    currentIndex = totalImages -1;
+            }
+            else{
+                currentIndex--;
+            }
+            images[currentIndex].classList.add('main');
+        }
+
+    </script>
+
+
+
+</body>
+</html>

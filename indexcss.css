@@ -1,0 +1,688 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+}
+nav{
+    background: grey;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+a.active,a:hover{
+    background: red;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:925px){
+    label.logo{
+        font: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+#top{
+    display: flex;
+    flex-shrink: none;
+    background: url(orsrc67320.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    width: 100%;
+    height: max-content;
+}
+
+/* CSS breakpoints*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button:hover{
+    border: none;
+    background-color: black;
+    
+}
+button{
+    background-color: red;
+    display: inline-block;
+    border: 2px solid red;
+    height: 20px;
+    width: 120px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+    transition: background-color 1s;
+    cursor: pointer;
+    
+}
+.button2:hover{
+    background-color: red;
+    color: white;
+    
+}
+.button2{
+    display: inline-block;
+    border: 2px solid grey;
+    background: none;
+    
+}
+#subcontainer{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 150px;
+    height: max-content;
+    width: 100%;
+}
+#info{
+    display:flexbox;
+    flex-basis: 50%;
+    margin-left: 50px;
+    margin-top: 15pc;
+    padding-right: 50px;
+    padding-left: 20px;
+    word-wrap: break-word;
+    color: blanchedalmond;
+}
+.img{
+    display: flexbox;
+    flex-basis: 50%;
+    margin-top: 50px;
+    padding-bottom: 0;
+   
+    
+}
+.img img{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+h1{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 70px;
+    color: white;
+}
+h2{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 70px;
+}
+h6{
+    color: red;
+}
+
+#container2{
+    display: flex;
+    border: none;
+    margin-top: o;
+    background-color: black;
+    width: inherit;
+    height: max-content;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.aboutus{
+flex-basis: 50%;
+margin-left: 50px;
+}
+.aboutus p{
+    color: white;
+}
+.img2{
+    border: 5px solid red;
+}
+#infogrid{
+    display: grid;
+    border: none;
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
+    padding-top: 50px;
+}
+#infogrid .sub{
+    border: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    color:gray;
+    height: 30px;
+    font-weight: bolder;
+}
+
+.aboutus
+button:hover{
+    border: none;
+    background-color: black;
+
+}
+button{
+    background-color: red;
+    display: inline-block;
+    border: 2px solid red;
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+    transition: background-color 1s;
+    
+}
+.button3:hover{
+    background-color: red;
+    color: white;
+    
+}
+.button3{
+    display: inline-block;
+    border: 2px solid red;
+    background: none;
+    color: red;
+    
+}
+#container3{
+    display: flex;
+    border: none;
+    margin-top: o;
+    background-color: #1B1212;
+   
+    width: inherit;
+    height:  max-content;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+#quals{
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+
+
+#export{
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding-left: 70px;
+}
+
+#skill{
+    display: grid;
+    width: 100%;
+    height: max-content;
+    border: none;
+    
+    padding-right: 0;
+    padding-bottom: 50px;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    
+}
+#skill .skill{
+    border: none;
+    
+
+}
+.skill0ms{
+    position: relative;
+    border: 5px solid grey;
+    align-content: center;
+    /*line-height: -50%;*/
+    padding: 8px;
+    font-size: 15px;
+    background: black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50% 50%;
+    
+    
+
+    background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(255,26,0,1) 89%,rgba(129,133,137) 77%) border-box;
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
+
+
+
+.skill p{
+    font-size: 30px;
+    color: red;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.skill0 p{
+    font-size: 30px;
+
+}
+
+/* for the circular meters
+background: linear-gradient(#000000, #000000) padding-box,
+linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(255,26,0,1) 89%,rgba(129,133,137) 77%) border-box;
+border: 5px solid transparent;
+border-radius: 50px;
+*/
+
+.skill0cs{
+    
+    border: 5px solid grey;
+    align-content: center;
+    /*line-height: -50%;*/
+    background: black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50% 50%;
+    padding: 8px;
+    font-size: 15px;
+
+    background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(255,26,0,1) 65%,rgba(129,133,137) 77%) border-box;
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
+
+.skill0html{
+    border: 5px solid grey;
+    align-content: center;
+    /*line-height: -50%;*/
+    background: black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50% 50%;
+    padding: 8px;
+    font-size: 15px;
+
+    background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(255,26,0,1) 75%,rgba(129,133,137) 77%) border-box;
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
+    .skill0css{ border: 5px solid grey;
+        align-content: center;
+        /*line-height: -50%;*/
+        background: black;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 50% 50%;
+        padding: 8px;
+    font-size: 15px;
+    
+        background: linear-gradient(#000000, #000000) padding-box,
+        linear-gradient(to right, rgba(255,26,0,1) 0%,rgba(255,26,0,1) 70%,rgba(129,133,137) 77%) border-box;
+        border: 5px solid transparent;
+        border-radius: 50px;
+}
+
+#container4{
+    display: flexbox;
+    border: none;
+    margin-top: o;
+    background-image: url(orsrc69006.jpg);
+   background-size: contain;
+   
+   background-position: center;
+    width: inherit;
+    height:  800px;
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-right: 150px;
+    color: white;
+   
+    font-size: 30px;
+
+    align-content: center;
+    text-align: center;
+}
+#services{
+    padding-left: 0px;
+    padding-right: 100px;
+    font-size: 20px;
+}
+#feat{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.item{
+    border: none;
+    height: 350px;
+    width: auto;
+    align-content: center;
+    opacity: 5;
+    /*
+    background: linear-gradient(150deg,rgb(199, 193, 191)40%, rgb(8, 0, 0)60%) ; */
+}
+
+
+
+
+/*css breakpoints*/
+
+
+
+
+@media (max-width:480px) {
+    /*styles*/
+    body{
+        width: 1300px;
+    }
+    #top{
+        width: 1300px;
+        font-size: 20px;
+    }
+    button{
+        width: 150px;
+    }
+    #infogrid{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #info{
+        flex-basis: 60%;
+    }
+    #export{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding-left: px;
+
+    }
+    #container3{
+        width: 1300px;
+        height: max-content;
+    }
+    #container4{
+        width: 1300px;
+        padding-left:  100px;
+    }
+    
+    }
+
+    #services{
+        margin-left: 250px;
+        
+    }
+    #feat{
+     margin-left: 10px;
+    }
+    
+
+ 
+ 
+ 
+ /*extra small devices*/
+ @media (min-width: 481px) and (max-width: 767px) {
+     /*styles*/
+     body{
+        width: 1500px;
+     }
+     #top{
+        width: 1500px;
+        font-size: 20px;
+    }
+    button{
+        width: 150px;
+    }
+    #container2{ 
+        width: 1500px;
+    }
+    #infogrid{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #info{
+        flex-basis: 60%;
+    }
+    #export{
+        flex-basis: 50%;
+        padding-left: px;
+
+    }
+    #container3{
+        width: 1500px;
+    }
+    ul li h4{
+        font-size: 50px;
+    }
+    #container4{
+        width: 1500px;
+        padding-left:  100px;
+    }
+
+    #services{
+        margin-left: 250px;
+        
+    }
+    #feat{
+     margin-left: 10px;
+    }
+ }
+ 
+ /*small tablets*/
+ @media (min-width:768px) and (max-width:991px) {
+     /*style*/
+     body{
+        width: 1800px;
+     }
+     #top{
+        width: 1800px;
+        font-size: 25px;
+    }
+    button{
+        width: 150px;
+    }
+    #infogrid{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #info{
+        flex-basis: 60%;
+    }
+    #export{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding-left: px;
+
+    }
+    #container3{
+        width: 1800px;
+        height: max-content;
+    }
+    #container4{
+        width: 1800px;
+        padding-left:  50px;
+    }
+    
+    }
+
+    #services{
+        margin-left: 250px;
+        
+    }
+    #feat{
+     margin-left: 10px;
+    
+}
+ 
+ /*large tablets/laptops */
+ @media (min-width:920px) and (max-width:1199px) {
+     /*style*/
+     body{
+        width: 1800px;
+     }
+     #top{
+        width: 1800px;
+        font-size: 25px;
+    }
+    button{
+        width: 150px;
+    }
+    #infogrid{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #info{
+        flex-basis: 60%;
+    }
+    #export{
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding-left: px;
+
+    }
+    #container3{
+        width: 1800px;
+        height: max-content;
+    }
+    #container4{
+        width: 1800px;
+        padding-left:  50px;
+    }
+    
+    }
+
+    #services{
+        margin-left: 250px;
+        
+    }
+    #feat{
+     margin-left: 10px;
+    
+}
+
+ 
+ /*Desktops*/
+ @media (min-width:1200px) and (max-width:1919px) {
+     /*style*/
+     button{
+        width: 150px;
+     }
+ }
+ 
+ /* Extra large Screens */
+ @media (min-width: 1920px) {
+     /*style*/
+ }
