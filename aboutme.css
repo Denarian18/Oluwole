@@ -440,12 +440,7 @@ a.active,a:hover{
     margin-top: 20px;
     width: 800px;
 }
-#location img{
-   
-    margin-left: 20px;
-    width: 1000px;
-    margin-right:90px ;
-}
+
 #location h1{
     
     margin-left: 10px;
@@ -466,19 +461,19 @@ a.active,a:hover{
 
 
 
-@media (max-width:480px) {
+@media (min-width:325px) and (max-width:480px) {
     /*styles*/
-    body{
-        width: 1913px;
+    body{ 
+        width: 1900px;
         height: max-content;
     }
     #container{
-        width: 1913px;
+        width: 1900px;
         max-height: max-content;
     }
     
     .navigation{
-        width:900px;
+        width:1900px;
         font-size: 100px;
     }
     #container .navigation .subnav{
@@ -529,23 +524,31 @@ a.active,a:hover{
         position: absolute;
          z-index: 10;
          font-size: 25px;
-         top: 600%;
+         top: 330%;
          left: 50px;
          font-weight: 700;
      }
      
      .navigation-buttons .next{
-         right:-1380px;
+         right:-1460px;
          position: absolute;
          font-size: 25px;
          z-index: 10;
-         top: 600%;
+         top: 330%;
      }
      #location img{
-        margin-top: 100px;
-        margin-left: -60px;
-        width: 1000px;
-        margin-right:90px ;
+        margin-top: 150px;
+        margin-left: 100px;
+        width: 1750px;
+        
+        
+    }
+    #location h1{
+        margin-top: 150px;
+        margin-left: 100px;
+        font-size: 70px;
+        color: grey;
+        text-decoration: underline;
     }
  }
  
@@ -617,28 +620,126 @@ a.active,a:hover{
         position: absolute;
          z-index: 10;
          font-size: 25px;
-         top: 700%;
-         left: 50px;
+         top: 440%;
+         left: 95px;
          font-weight: 700;
      }
      
      .navigation-buttons .next{
-         right:-1380px;
+         right:-1300px;
          position: absolute;
          font-size: 25px;
          z-index: 10;
-         top: 700%;
+         top: 440%;
      }
- }#location img{
-    
-    margin-left: 40px;
-    width: 1950px;
+ #location img{
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 1800px;
     margin-right:90px ;
+}
+#location h1{
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 70px;
+    color: grey;
+    text-decoration: underline;
+}
 }
  
  /*small tablets*/
  @media (min-width:768px) and (max-width:991px) {
      /*style*/
+            body{
+        width: 3150px;
+        height: max-content;
+    }
+    #container{
+        width: 3150px;
+        max-height: max-content;
+    }
+    
+    .navigation{
+        width:900px;
+        font-size: 100px;
+    }
+    #container .navigation .subnav{
+        height: 100px;
+        font-size: 25px;
+        line-height: -50px;
+        padding-top: 10px;
+        margin-top: 230%;
+    }
+    #container .navigation .subnav p{
+        padding-top: 10px;
+    }
+    .content p{
+        font-size: 40px;
+    }
+    #container1{
+        width: 3150px;
+        height:500px;
+        margin-left: 0;
+    }
+    #container1 h1{
+        font-size: 120px;
+    }
+    #subcontainer{
+        width:1990px;
+        height: 550px;
+    }
+    .skill0html, .skill0cs, .skill0css, .skill0ms{
+        height: 400px;
+        width: 400px;
+        padding-top: 150px;
+        border-radius: 200px;
+        font-size: 120px;
+    }
+    
+    
+    .carousel-container{
+        margin-top: 100px;
+        padding-top: 200px;
+    }
+    .slider-carousel{
+        padding-top: 100px;
+    margin-top: 200px;
+
+    }
+    .images{
+        padding-left: 50px;
+        padding-right: 20px;
+        width: 1900px;
+    }
+    .navigation-buttons .previous{
+        position: absolute;
+         z-index: 10;
+         font-size: 25px;
+         top: 700%;
+         left: 95px;
+         font-weight: 700;
+     }
+     
+     .navigation-buttons .next{
+         right:-1300px;
+         position: absolute;
+         font-size: 25px;
+         z-index: 10;
+         top: 700%;
+     }
+ #location img{
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 1800px;
+    margin-right:90px ;
+}
+#location h1{
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 70px;
+    color: grey;
+    text-decoration: underline;
+}
  }
  
  /*large tablets/laptops */
