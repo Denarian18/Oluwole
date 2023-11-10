@@ -193,6 +193,12 @@ a.active,a:hover{
     flex-shrink: 0;
     
 }
+.content h1 {
+    font-size: 50px; padding: 20px; color: peru;
+}
+.content h2{
+    font-size: 40px; padding-top:10px; padding-bottom:5px; text-decoration: underline; color: peru;
+}
  
 
 
@@ -553,7 +559,7 @@ a.active,a:hover{
  }
  
  /*extra small devices*/
- @media (min-width: 481px) and (max-width: 767px) {
+ @media (min-width: 481px) and (max-width: 768px) {
      /*styles*/
          body{
         width: 2150px;
@@ -608,7 +614,7 @@ a.active,a:hover{
     }
     .slider-carousel{
         padding-top: 100px;
-    margin-top: 200px;
+        margin-top: 200px;
 
     }
     .images{
@@ -673,72 +679,98 @@ a.active,a:hover{
     #container .navigation .subnav p{
         padding-top: 10px;
     }
-    .content p{
-        font-size: 40px;
+    .content h1{
+        font-size: 150px;
     }
+    .content p{
+        font-size: 50px;
+    }
+    .content{
+        font-size: 50px;
+    }
+    .content h2{
+        font-size: 150px;
+    }
+    
     #container1{
         width: 3150px;
         height:500px;
-        margin-left: 0;
+        margin-left: 100px;
     }
     #container1 h1{
         font-size: 120px;
     }
     #subcontainer{
+        padding-top: 200px;
         width:1990px;
-        height: 550px;
+        height: 750px;
+        margin-left: 150px;
+        margin-bottom: 100px;
     }
     .skill0html, .skill0cs, .skill0css, .skill0ms{
-        height: 400px;
-        width: 400px;
-        padding-top: 150px;
-        border-radius: 200px;
-        font-size: 120px;
+        height: 600px;
+        width: 600px;
+        padding-top: 200px;
+        border-radius: 400px;
+        font-size: 190px;
+    }
+    .skill.Html5, .skill.cs, .skill.CSS3, .skill.MS{
+        font-size: 70px;
     }
     
-    
-    .carousel-container{
-        margin-top: 100px;
+    #carousel-container{
+        margin-top: 200px;
         padding-top: 200px;
+        
     }
     .slider-carousel{
         padding-top: 100px;
-    margin-top: 200px;
+        margin-top: 200px;
+        margin-left: 800px;
+    
 
     }
     .images{
         padding-left: 50px;
         padding-right: 20px;
-        width: 1900px;
+        width: 1500px;
+        
+       
+        
     }
+   
     .navigation-buttons .previous{
         position: absolute;
          z-index: 10;
          font-size: 25px;
-         top: 700%;
-         left: 95px;
+         top: 950%;
+         left: 900px;
          font-weight: 700;
      }
      
      .navigation-buttons .next{
-         right:-1300px;
+         right:-1600px;
          position: absolute;
          font-size: 25px;
          z-index: 10;
-         top: 700%;
+         top: 950%;
      }
  #location img{
-    margin-top: 100px;
-    margin-left: 130px;
-    width: 1800px;
+    margin-top: 150px;
+    margin-left: 400px;
+    width: 2500px;
     margin-right:90px ;
 }
 #location h1{
-    margin-top: 150px;
-    margin-left: 100px;
-    font-size: 70px;
+    display: block;
+    width: max-content;
+    margin-top: 250px;
+    margin-left: 1100px;
+    margin-right: 0;
+    font-size: 90px;
     color: grey;
     text-decoration: underline;
+    text-align: center;
 }
  }
  
